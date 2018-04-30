@@ -230,6 +230,19 @@ void insertNode(int databaru, int datasebelum){
 	} else cout<<"Masih kosong\n";
 }*/
 
+void hapusNode(int datahapus){
+	TNode *hapus = new TNode;
+	TNode *bantu = new TNode;
+	hapus = head;
+	for(int i=1;i<datahapus;i++){
+		bantu = hapus;
+		hapus = hapus->next;
+}
+
+bantu->next = hapus->next;
+
+}
+
 
 int main()
 {
@@ -248,7 +261,7 @@ int main()
     cetak();
     cout<<endl;
     cout<<endl;
-    hapusNode(9);
+    hapusNode(3);
     cout<<endl;
     cetak();
     
